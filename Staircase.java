@@ -1,6 +1,6 @@
 package Algoritma;
 
-import java.util.Arrays;
+//import java.util.Arrays;
 import java.util.Scanner;
 
 public class Staircase {
@@ -9,6 +9,17 @@ public class Staircase {
 	    Scanner sc = new Scanner(System.in);
 	    int n = sc.nextInt();
 	    sc.close();
+	    
+	    for(int i = 0; i<n; i++){
+	        for(int x = i+1; x < n; x++){
+	            System.out.print(" ");
+	        }
+	        for(int x = n-(i+1); x < n; x++){
+	            System.out.print("#");
+	        }
+	        System.out.println();
+	    
+	    /*
 	    char [] arreglo = new char [n+5];
 	    Arrays.fill(arreglo, ' ');
 	    //for(int i=0; i<=arreglo.length; i++)
@@ -19,7 +30,8 @@ public class Staircase {
 	        arreglo[n-i] = '#';
 	        System.out.println(arreglo);
 	    }
-	   
+	   */
 	}
 
+}
 }
